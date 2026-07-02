@@ -1347,3 +1347,66 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.7rem;
     }
 }
+
+/* --- Ultra-Responsive Overrides for Small Mobile & S22 (<= 480px) --- */
+@media (max-width: 480px) {
+    /* Container breathing room */
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .grid-lines {
+        padding: 0 1.25rem;
+    }
+    
+    /* Typography checks to prevent word overflow */
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.05;
+    }
+    .services-header-title {
+        font-size: 2rem;
+    }
+    .contact-title {
+        font-size: 2.25rem;
+    }
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    /* Section paddings */
+    .py-section {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+    
+    /* Atelier stats vertical stack for S22 width */
+    .atelier-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    /* Full-width call to action buttons for easy touch targets */
+    .contact-form-container {
+        width: 100%;
+    }
+    .contact-form-container div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form-container .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Adjust floating button location for screen corners as full sticky bar */
+    .floating-whatsapp {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        left: 1.25rem;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+        font-size: 0.7rem;
+    }
+}
