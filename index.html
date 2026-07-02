@@ -23,16 +23,22 @@
     <!-- Mobile Navigation Drawer -->
     <div class="mobile-nav-drawer" id="mobileDrawer">
         <ul class="mobile-nav-menu">
-            <li><a href="#home" class="mobile-nav-link">Home</a></li>
-            <li><a href="#philosophy" class="mobile-nav-link">Philosophy</a></li>
-            <li><a href="#services" class="mobile-nav-link">Rituals</a></li>
-            <li><a href="#atelier" class="mobile-nav-link">The Space</a></li>
-            <li><a href="#testimonials" class="mobile-nav-link">Journal</a></li>
-            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="#home" class="mobile-nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="#philosophy" class="mobile-nav-link" data-i18n="nav_philosophy">Philosophy</a></li>
+            <li><a href="#services" class="mobile-nav-link" data-i18n="nav_services">Rituals</a></li>
+            <li><a href="#atelier" class="mobile-nav-link" data-i18n="nav_atelier">The Space</a></li>
+            <li><a href="#testimonials" class="mobile-nav-link" data-i18n="nav_reviews">Journal</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
+        <!-- Mobile Language Switcher -->
+        <div class="lang-switcher mobile-lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">عربي</button>
+        </div>
         <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
             <span class="btn-overlay"></span>
-            <span class="btn-text">Book on WhatsApp</span>
+            <span class="btn-text" data-i18n="nav_book_mobile">Book on WhatsApp</span>
         </a>
     </div>
 
@@ -42,18 +48,25 @@
             <a href="#home" class="logo">L'ATELIER <span class="italic-accent" style="font-size: 1.35rem; font-weight: 400;">Homme</span></a>
             
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
-                <li><a href="#services" class="nav-link">Rituals</a></li>
-                <li><a href="#atelier" class="nav-link">The Space</a></li>
-                <li><a href="#testimonials" class="nav-link">Journal</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#philosophy" class="nav-link" data-i18n="nav_philosophy">Philosophy</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav_services">Rituals</a></li>
+                <li><a href="#atelier" class="nav-link" data-i18n="nav_atelier">The Space</a></li>
+                <li><a href="#testimonials" class="nav-link" data-i18n="nav_reviews">Journal</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
+                <!-- Desktop Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">عربي</button>
+                </div>
+
                 <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
                     <span class="btn-overlay"></span>
-                    <span class="btn-text">Chat with Booking Bot</span>
+                    <span class="btn-text" data-i18n="nav_book">Book Appointment</span>
                 </a>
                 
                 <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
@@ -71,21 +84,21 @@
         <!-- Hero Section -->
         <section id="home" class="container hero py-section">
             <div class="hero-content reveal">
-                <div class="overline-label hero-subtitle">L'Atelier Homme / Grooming House</div>
-                <h1 class="hero-title">
-                    Sartorial <span class="italic-accent">*Precision*</span><br>
-                    For The <span class="italic-accent">*Modern*</span> Man.
+                <div class="overline-label hero-subtitle" data-i18n="hero_overline">L'Atelier Homme / Grooming House</div>
+                <h1 class="hero-title" data-i18n-html="hero_title">
+                    Refined <span class="italic-accent">*Grooming*</span><br>
+                    For The <span class="italic-accent">*Distinguished*</span> Man.
                 </h1>
-                <p class="hero-desc">
-                    A refined grooming sanctuary crafted for the modern gentleman. We define masculine elegance through architectural shear work, hot-towel steam rituals, and organic botanical care.
+                <p class="hero-desc" data-i18n="hero_desc">
+                    A private sanctuary built for men who value precision and understated sophistication. We master the art of grooming through architectural craft, slow-care rituals, and high-end botanical formulations.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
                         <span class="btn-overlay"></span>
-                        <span class="btn-text">WhatsApp Booking Bot</span>
+                        <span class="btn-text" data-i18n="hero_btn_primary">Reserve Session</span>
                     </a>
-                    <a href="#services" class="btn btn-secondary">
-                        Grooming Menu
+                    <a href="#services" class="btn btn-secondary" data-i18n="hero_btn_secondary">
+                        Explore Services
                     </a>
                 </div>
             </div>
@@ -102,14 +115,14 @@
         <section id="philosophy" class="container py-section">
             <div class="philosophy-grid">
                 <div class="philosophy-info reveal">
-                    <div class="overline-label" style="margin-bottom: 2rem;">Philosophy</div>
-                    <h2 class="drop-cap" style="font-size: 2.25rem; font-family: var(--font-heading); margin-bottom: 2rem; line-height: 1.3;">
-                        Grooming is an act of <span class="italic-accent">refinement</span>. It is about understanding the structural geometry of the head and the organic flow of the hair.
+                    <div class="overline-label" style="margin-bottom: 2rem;" data-i18n="phil_overline">Philosophy</div>
+                    <h2 class="drop-cap" style="font-size: 2.25rem; font-family: var(--font-heading); margin-bottom: 2rem; line-height: 1.3;" data-i18n-html="phil_title">
+                        We believe that grooming is an art of <span class="italic-accent">precision</span>. It is not about vanity, but respecting the details that define a man's character.
                     </h2>
-                    <p style="color: var(--muted-fg); margin-bottom: 2rem; max-w-xl;">
-                        At L'Atelier Homme, we reject generic clippers-only treatments. Every session begins with a structural analysis of your head form. We execute our work with shears and hand-honed straight razors, using organic menthol, cedarwood, and sandalwood essences to provide a quiet, luxurious care cycle.
+                    <p style="color: var(--muted-fg); margin-bottom: 2rem;" data-i18n="phil_desc">
+                        Every haircut, shave, and treatment we perform is executed with surgical precision. We use premium organic products and time-honored barbering techniques merged with modern methodology to deliver an experience of quiet excellence.
                     </p>
-                    <a href="#contact" class="btn btn-link">View our bespoke detailing systems</a>
+                    <a href="#contact" class="btn btn-link" data-i18n="phil_link">Discover our grooming philosophy</a>
                 </div>
                 
                 <div class="philosophy-image-container reveal reveal-delay-2">
@@ -124,8 +137,8 @@
         <!-- Services Section (Grooming Menu) -->
         <section id="services" class="container py-section" style="border-top: 1px solid var(--border-color);">
             <div class="services-header reveal">
-                <h2 class="services-header-title">The <span class="italic-accent">Sartorial</span> Menu</h2>
-                <p class="services-header-desc">Bespoke grooming rituals designed to respect hair structure, facial form, and organic health.</p>
+                <h2 class="services-header-title" data-i18n-html="svc_title">The <span class="italic-accent">Signature</span> Menu</h2>
+                <p class="services-header-desc" data-i18n="svc_desc">A curated selection of premium grooming services designed for precision, comfort, and timeless style.</p>
             </div>
 
             <div class="services-grid">
@@ -135,14 +148,14 @@
                         <img src="assets/service_haircut.png" alt="Precision hair styling cut detailing at L'Atelier Homme" loading="lazy">
                     </div>
                     <div class="service-meta">
-                        <h3 class="service-name">Precision Cut</h3>
-                        <span class="service-price">From $65</span>
+                        <h3 class="service-name" data-i18n="svc1_name">Precision Cut & Style</h3>
+                        <span class="service-price" data-i18n="svc1_price">From $85</span>
                     </div>
-                    <p class="service-desc">Dimensional hand-sheared haircutting shaped around head architecture, finished with organic herbal oil washes.</p>
+                    <p class="service-desc" data-i18n="svc1_desc">Expertly crafted haircuts combining classic barbering techniques with modern editorial styling for the discerning gentleman.</p>
                     <ul class="service-details-list">
-                        <li><span>Atelier Signature Cut & Wash</span> <span>$65</span></li>
-                        <li><span>Sartorial Scissors-Only Detailing</span> <span>$85</span></li>
-                        <li><span>Cleanse, Condition & Blowout</span> <span>$45</span></li>
+                        <li><span data-i18n="svc1_d1">Classic Gentleman's Cut</span> <span>$65</span></li>
+                        <li><span data-i18n="svc1_d2">Executive Styling & Texture</span> <span>$85</span></li>
+                        <li><span data-i18n="svc1_d3">Scalp Treatment & Cut</span> <span>$45</span></li>
                     </ul>
                 </div>
 
@@ -152,14 +165,14 @@
                         <img src="assets/service_beard.png" alt="Signature hot towel shave and straight razor detailing" loading="lazy">
                     </div>
                     <div class="service-meta">
-                        <h3 class="service-name">Beard Detailing</h3>
-                        <span class="service-price">From $50</span>
+                        <h3 class="service-name" data-i18n="svc2_name">Beard Sculpting</h3>
+                        <span class="service-price" data-i18n="svc2_price">From $60</span>
                     </div>
-                    <p class="service-desc">Straight razor lining, hot towel oil steam therapy, and sculpting massage using hand-blended sandalwood balms.</p>
+                    <p class="service-desc" data-i18n="svc2_desc">Meticulous beard shaping, hot-towel shaves, and conditioning treatments for distinguished facial hair grooming.</p>
                     <ul class="service-details-list">
-                        <li><span>Signature Hot-Towel Shave</span> <span>$50</span></li>
-                        <li><span>Beard Sculpting & Razor Outline</span> <span>$40</span></li>
-                        <li><span>Atelier Consultation & Trim</span> <span>$35</span></li>
+                        <li><span data-i18n="svc2_d1">Signature Hot-Towel Shave</span> <span>$50</span></li>
+                        <li><span data-i18n="svc2_d2">Beard Design & Sculpting</span> <span>$40</span></li>
+                        <li><span data-i18n="svc2_d3">Beard Conditioning Ritual</span> <span>$35</span></li>
                     </ul>
                 </div>
 
@@ -169,14 +182,14 @@
                         <img src="assets/service_shampoo.png" alt="Luxurious men scalp therapy and shampoo massage" loading="lazy">
                     </div>
                     <div class="service-meta">
-                        <h3 class="service-name">Scalp Therapy</h3>
-                        <span class="service-price">From $55</span>
+                        <h3 class="service-name" data-i18n="svc3_name">Scalp & Hair Therapy</h3>
+                        <span class="service-price" data-i18n="svc3_price">From $75</span>
                     </div>
-                    <p class="service-desc">Reinvigorating treatments combining charcoal mud detoxing, manual pressure points massage, and menthol rinses.</p>
+                    <p class="service-desc" data-i18n="svc3_desc">Restorative scalp treatments and deep hair therapies using organic botanicals and advanced trichology techniques.</p>
                     <ul class="service-details-list">
-                        <li><span>Organic Charcoal Mud Detox</span> <span>$55</span></li>
-                        <li><span>Menthol Revitalizing Scalp Wash</span> <span>$35</span></li>
-                        <li><span>Atelier Complete Scalp Therapy</span> <span>$75</span></li>
+                        <li><span data-i18n="svc3_d1">Deep Scalp Detox Therapy</span> <span>$55</span></li>
+                        <li><span data-i18n="svc3_d2">Hair Reconstruction Treatment</span> <span>$35</span></li>
+                        <li><span data-i18n="svc3_d3">Anti-Thinning Protocol</span> <span>$75</span></li>
                     </ul>
                 </div>
             </div>
@@ -184,7 +197,7 @@
             <div style="display: flex; justify-content: center; margin-top: 5rem;" class="reveal">
                 <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
                     <span class="btn-overlay"></span>
-                    <span class="btn-text">Start Chatbot Booking</span>
+                    <span class="btn-text" data-i18n="svc_book">Book Your Session</span>
                 </a>
             </div>
         </section>
@@ -193,26 +206,26 @@
         <section id="atelier" class="atelier py-section">
             <div class="container atelier-grid">
                 <div class="atelier-content reveal">
-                    <div class="overline-label">The Space</div>
-                    <h2 style="font-size: 2.5rem; line-height: 1.2;">
-                        The Grooming <span class="italic-accent">Sanctuary</span>
+                    <div class="overline-label" data-i18n="atl_overline">The Space</div>
+                    <h2 style="font-size: 2.5rem; line-height: 1.2;" data-i18n-html="atl_title">
+                        An Atelier of <span class="italic-accent">Quiet Mastery</span>
                     </h2>
-                    <p style="color: var(--muted-fg); font-size: 0.9375rem;">
-                        Our Atelier incorporates dark green wood paneling, tactile concrete surfaces, and custom hand-stitched leather grooming chairs. It is designed to provide complete acoustic separation, allowing you to relax during your straight-razor detailing session.
+                    <p style="color: var(--muted-fg); font-size: 0.9375rem;" data-i18n="atl_desc">
+                        Crafted with dark timber, aged leather, and natural stone, our space is a sanctuary of masculine refinement. Every detail is designed to provide you with absolute privacy and focused care in an environment of architectural calm.
                     </p>
                     
                     <div class="atelier-stats">
                         <div class="stat-item">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">Master Barbers</span>
+                            <span class="stat-number" data-i18n="atl_stat1">8</span>
+                            <span class="stat-label" data-i18n="atl_stat1_label">Master Barbers</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Natural Balms</span>
+                            <span class="stat-number" data-i18n="atl_stat2">100%</span>
+                            <span class="stat-label" data-i18n="atl_stat2_label">Organic Products</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">45m</span>
-                            <span class="stat-label">Average Session</span>
+                            <span class="stat-number" data-i18n="atl_stat3">1-on-1</span>
+                            <span class="stat-label" data-i18n="atl_stat3_label">Private Sessions</span>
                         </div>
                     </div>
                 </div>
@@ -225,7 +238,7 @@
 
         <!-- Reviews Journal -->
         <section id="testimonials" class="container py-section">
-            <h2 class="testimonials-title reveal">The client <span class="italic-accent">Journal</span></h2>
+            <h2 class="testimonials-title reveal" data-i18n-html="test_title">The Gentleman's <span class="italic-accent">Journal</span></h2>
 
             <div class="testimonials-grid">
                 <!-- Testimonial 1 -->
@@ -237,16 +250,16 @@
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
-                    <blockquote class="testimonial-text">
-                        "The precision haircutting here is unmatched. They don't rush clipper work; they take their time using shears to shape the haircut to my head form. The hot towel and herbal shampoo finish makes it an exceptional routine."
+                    <blockquote class="testimonial-text" data-i18n="test1_text">
+                        "The precision of my haircut was outstanding. The hot-towel shave was the most relaxing experience I've ever had. This isn't just a barber shop — it's a grooming sanctuary."
                     </blockquote>
                     <div class="testimonial-author">
                         <div class="author-avatar">
                             <img src="assets/hero_barber.png" alt="Portrait review of a distinguished man with professional hairstyle" loading="lazy">
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Jean-Laurent Mercier</span>
-                            <span class="author-role">Architectural Consultant</span>
+                            <span class="author-name" data-i18n="test1_name">Marcus Belmont</span>
+                            <span class="author-role" data-i18n="test1_role">Investment Director</span>
                         </div>
                     </div>
                 </div>
@@ -260,16 +273,16 @@
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
                     </div>
-                    <blockquote class="testimonial-text">
-                        "Finding a barber shop that executes straight-razor detailing correctly is difficult. L'Atelier Homme does it flawlessly. The hot towels, oil rubs, and beard balm trim make it an immersive, highly relaxing therapy."
+                    <blockquote class="testimonial-text" data-i18n="test2_text">
+                        "L'Atelier Homme has redefined my grooming routine. The scalp therapy alone is worth the visit. The atmosphere, the service, the products — everything is impeccable."
                     </blockquote>
                     <div class="testimonial-author">
                         <div class="author-avatar">
                             <img src="assets/hero_barber.png" alt="Portrait review of a groomed gentleman with neat beard styling" loading="lazy">
                         </div>
                         <div class="author-info">
-                            <span class="author-name">Alexandre de Vigny</span>
-                            <span class="author-role">Creative Director</span>
+                            <span class="author-name" data-i18n="test2_name">Alexandre Renaud</span>
+                            <span class="author-role" data-i18n="test2_role">Architect</span>
                         </div>
                     </div>
                 </div>
@@ -280,46 +293,46 @@
         <section class="container py-section" style="border-top: 1px solid var(--border-color);">
             <div class="faq-grid">
                 <div class="faq-intro reveal">
-                    <div class="overline-label">F.A.Q.</div>
-                    <h2 style="font-size: 2.25rem; line-height: 1.2;">
+                    <div class="overline-label" data-i18n="faq_overline">F.A.Q.</div>
+                    <h2 style="font-size: 2.25rem; line-height: 1.2;" data-i18n-html="faq_title">
                         The <span class="italic-accent">Details</span>
                     </h2>
-                    <p style="color: var(--muted-fg); font-size: 0.9375rem;">
-                        Everything you need to know about preparing for your grooming visit.
+                    <p style="color: var(--muted-fg); font-size: 0.9375rem;" data-i18n="faq_desc">
+                        Everything you need to know before your visit to L'Atelier Homme.
                     </p>
                 </div>
                 
                 <ul class="faq-list reveal reveal-delay-1">
                     <li class="faq-item">
                         <button class="faq-question">
-                            <span>How does the WhatsApp Chatbot booking work?</span>
+                            <span data-i18n="faq1_q">How do I book an appointment?</span>
                             <span class="faq-toggle-icon"></span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                Clicking our chatbot button launches our automated WhatsApp assistant. It will guide you through selecting a service, master barber, and date within a minute.
+                            <div class="faq-answer-content" data-i18n="faq1_a">
+                                You can book directly through our WhatsApp chatbot for instant confirmation, or call us at the Atelier. Walk-ins are welcome but appointments are recommended.
                             </div>
                         </div>
                     </li>
                     <li class="faq-item">
                         <button class="faq-question">
-                            <span>Do you accept walk-ins?</span>
+                            <span data-i18n="faq2_q">What products do you use?</span>
                             <span class="faq-toggle-icon"></span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                We operate strictly by appointment to ensure each client receives full, unhurried, one-on-one attention from their dedicated master barber.
+                            <div class="faq-answer-content" data-i18n="faq2_a">
+                                We use exclusively organic, sustainably sourced grooming products. Our formulations are free from synthetic chemicals, parabens, and artificial fragrances.
                             </div>
                         </div>
                     </li>
                     <li class="faq-item">
                         <button class="faq-question">
-                            <span>What grooming formulations do you use?</span>
+                            <span data-i18n="faq3_q">What is your cancellation policy?</span>
                             <span class="faq-toggle-icon"></span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-content">
-                                We utilize specialized organic mens grooming brands. Our hair washes, pre-shave oils, and beard pomades are 100% natural, formulated with cedar, sandalwood, and sage oils.
+                            <div class="faq-answer-content" data-i18n="faq3_a">
+                                We respect our barbers' dedicated time. Please provide at least 24 hours notice for cancellations or rescheduling.
                             </div>
                         </div>
                     </li>
@@ -331,34 +344,34 @@
         <section id="contact" class="container py-section contact-section">
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <h2 class="contact-title">Begin Your <br><span class="italic-accent">Refinement</span></h2>
+                    <h2 class="contact-title" data-i18n-html="ct_title">Begin Your <br><span class="italic-accent">Transformation</span></h2>
                     
                     <div class="contact-details">
                         <div class="contact-detail-item">
-                            <span>Atelier Location</span>
-                            <span>12 Rue Didouche Mourad, Algiers, Algeria</span>
+                            <span data-i18n="ct_loc_label">Atelier Location</span>
+                            <span data-i18n="ct_loc">22 Boulevard Mohamed V, Algiers, Algeria</span>
                         </div>
                         <div class="contact-detail-item">
-                            <span>Contact Direct</span>
+                            <span data-i18n="ct_phone_label">Direct Line</span>
                             <span><a href="tel:+213782549228">+213 782 549 228</a></span>
                         </div>
                         <div class="contact-detail-item">
-                            <span>Email Inquiries</span>
+                            <span data-i18n="ct_email_label">Email</span>
                             <span><a href="mailto:atelier@latelierhomme.com">detailing@latelierhomme.com</a></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form-container reveal reveal-delay-1" style="display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
-                    <p style="color: var(--muted-fg); font-size: 1.125rem; max-width: 32rem; margin-bottom: 0.5rem;">
-                        Our reservation cycle is modern and automated. Choose to start booking instantly with our automated WhatsApp chatbot, or call our direct phone line.
+                    <p style="color: var(--muted-fg); font-size: 1.125rem; max-width: 32rem; margin-bottom: 0.5rem;" data-i18n="ct_desc">
+                        Our booking is direct and efficient. Chat with our automated booking assistant on WhatsApp, or call the Atelier directly.
                     </p>
                     <div class="contact-buttons">
                         <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20start%20booking%20with%20your%20assistant." target="_blank" class="btn btn-primary">
                             <span class="btn-overlay"></span>
-                            <span class="btn-text">Book via WhatsApp Chatbot</span>
+                            <span class="btn-text" data-i18n="ct_btn_wa">Book via WhatsApp</span>
                         </a>
-                        <a href="tel:+213782549228" class="btn btn-secondary">
+                        <a href="tel:+213782549228" class="btn btn-secondary" data-i18n="ct_btn_call">
                             Call Atelier
                         </a>
                     </div>
@@ -373,35 +386,35 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="#home" class="footer-logo">L'ATELIER <span class="italic-accent" style="font-size: 1.7rem; color: var(--accent);">Homme</span></a>
-                <p class="footer-brand-desc">
-                    An editorial sanctuary focused on masculine hair architecture, organic detailing balms, and silent grooming tranquility.
+                <p class="footer-brand-desc" data-i18n="ft_desc">
+                    A distinguished grooming atelier dedicated to precision craftsmanship, organic care, and the refined art of masculine elegance.
                 </p>
             </div>
 
             <div class="footer-links">
-                <h4 class="footer-title">Explore</h4>
+                <h4 class="footer-title" data-i18n="ft_explore">Explore</h4>
                 <ul class="footer-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#philosophy">Philosophy</a></li>
-                    <li><a href="#services">Grooming Rituals</a></li>
-                    <li><a href="#atelier">The Atelier Space</a></li>
-                    <li><a href="#testimonials">Client Journal</a></li>
+                    <li><a href="#home" data-i18n="ft_link_home">Home</a></li>
+                    <li><a href="#philosophy" data-i18n="ft_link_phil">Philosophy</a></li>
+                    <li><a href="#services" data-i18n="ft_link_svc">Signature Menu</a></li>
+                    <li><a href="#atelier" data-i18n="ft_link_atl">The Atelier Space</a></li>
+                    <li><a href="#testimonials" data-i18n="ft_link_journal">Client Reviews</a></li>
                 </ul>
             </div>
 
             <div class="footer-hours">
-                <h4 class="footer-title">Atelier Hours</h4>
+                <h4 class="footer-title" data-i18n="ft_hours_title">Atelier Hours</h4>
                 <div class="footer-hours-grid">
-                    <div><span>Monday — Friday</span> <span>09:00 - 20:00</span></div>
-                    <div><span>Saturday</span> <span>10:00 - 19:00</span></div>
-                    <div><span>Sunday</span> <span>Closed (By Appointment Only)</span></div>
+                    <div><span data-i18n="ft_mon">Monday — Friday</span> <span>09:00 - 20:00</span></div>
+                    <div><span data-i18n="ft_sat">Saturday</span> <span>10:00 - 19:00</span></div>
+                    <div><span data-i18n="ft_sun">Sunday</span> <span data-i18n="ft_sun_val">Closed (By Appointment Only)</span></div>
                 </div>
             </div>
 
             <div class="footer-social-section">
-                <h4 class="footer-title">Connect</h4>
+                <h4 class="footer-title" data-i18n="ft_connect">Connect</h4>
                 <div class="social-icons">
-                    <!-- WhatsApp (Primary Contact +213782549228) -->
+                    <!-- WhatsApp -->
                     <a href="https://wa.me/213782549228?text=Hello%20L'Atelier%20Homme%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="social-icon-link" aria-label="WhatsApp Official Link">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.37 5.378 0 12.01 0a11.948 11.948 0 0 1 8.49 3.518 11.957 11.957 0 0 1 3.5 8.49c-.003 6.643-5.378 12.013-12.01 12.013-1.997-.001-3.957-.496-5.71-1.442L0 24zm6.59-4.846c1.62.96 3.21 1.468 4.93 1.47 5.275 0 9.56-4.287 9.563-9.563A9.5 9.5 0 0 0 18.3 4.316a9.513 9.513 0 0 0-6.756-2.793c-5.278 0-9.564 4.29-9.566 9.564-.001 1.795.488 3.55 1.414 5.097l-.988 3.6 3.692-.969zm11.332-6.52c-.3-.15-1.771-.875-2.046-.975-.276-.1-.477-.15-.677.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-1.04-.531-1.823-1.01-2.546-2.254-.192-.33-.06-.51.083-.69.13-.157.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525c-.075-.15-.676-1.628-.926-2.228-.243-.585-.49-.504-.677-.513-.175-.008-.375-.01-.575-.01a1.1 1.1 0 0 0-.798.375c-.276.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.493 1.707.631.715.227 1.365.195 1.88.118.572-.085 1.771-.725 2.02-.1.25-.675.25-1.25.175-1.35-.074-.1-.275-.15-.575-.3z"/>
@@ -442,11 +455,11 @@
         </div>
 
         <div class="container footer-bottom">
-            <div>&copy; 2026 L'Atelier Homme. All Rights Reserved.</div>
+            <div data-i18n="ft_copy">&copy; 2026 L'Atelier Homme. All Rights Reserved.</div>
             <div class="footer-bottom-links">
-                <a href="#home">Privacy Policy</a>
-                <a href="#home">Terms of Service</a>
-                <a href="#home">Site Credits</a>
+                <a href="#home" data-i18n="ft_privacy">Privacy Policy</a>
+                <a href="#home" data-i18n="ft_terms">Terms of Service</a>
+                <a href="#home" data-i18n="ft_credits">Site Credits</a>
             </div>
         </div>
     </footer>
@@ -456,9 +469,10 @@
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.37 5.378 0 12.01 0a11.948 11.948 0 0 1 8.49 3.518 11.957 11.957 0 0 1 3.5 8.49c-.003 6.643-5.378 12.013-12.01 12.013-1.997-.001-3.957-.496-5.71-1.442L0 24zm6.59-4.846c1.62.96 3.21 1.468 4.93 1.47 5.275 0 9.56-4.287 9.563-9.563A9.5 9.5 0 0 0 18.3 4.316a9.513 9.513 0 0 0-6.756-2.793c-5.278 0-9.564 4.29-9.566 9.564-.001 1.795.488 3.55 1.414 5.097l-.988 3.6 3.692-.969zm11.332-6.52c-.3-.15-1.771-.875-2.046-.975-.276-.1-.477-.15-.677.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-1.04-.531-1.823-1.01-2.546-2.254-.192-.33-.06-.51.083-.69.13-.157.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525c-.075-.15-.676-1.628-.926-2.228-.243-.585-.49-.504-.677-.513-.175-.008-.375-.01-.575-.01a1.1 1.1 0 0 0-.798.375c-.276.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.493 1.707.631.715.227 1.365.195 1.88.118.572-.085 1.771-.725 2.02-.1.25-.675.25-1.25.175-1.35-.074-.1-.275-.15-.575-.3z"/>
         </svg>
-        <span>حجز سريع / BOOK NOW</span>
+        <span data-i18n="float_book">احجز الآن / BOOK NOW</span>
     </a>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
